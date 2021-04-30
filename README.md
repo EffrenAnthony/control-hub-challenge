@@ -38,6 +38,15 @@ to see in the viewport ot use this route
 `http://localhost:3000/json/:number`
 to se a JSON response
 
+## Solution process
+
+I use express to solve this problem because the facility to create a server and make endpoints and routes. In this project I create 3 routes:
+ - The first one `('/') `shows the instructions to use the enpoints
+ - In the second one `('/json/:number')`, that the user have to pass by param the number that he/she wants to know the Fibonacci number and the response will be in JSON format.
+ - In the third one `('/:number')`, that the user have to pass by param the number that he/she wants to know the Fibonacci number and the response will be show in the browser.
+
+Finally to explain the fibonacci function, I takes the number and an optional memo object, this function is going to do the operation to get fibonacci numbers and will save in an object the value of every fibonacci number in this object. I made this in order to implement memoization in this algorithm to optimize the performance and reduce computational spend.
+
 ## Problem Description:
 Fibonacci Rest API
 Scenario: There is a need for a Rest (or Rest-like) API that can receive an index "n" and returns the Fibonacci value that corresponds to the given index, and you have been tasked with implementing the first version of this API.

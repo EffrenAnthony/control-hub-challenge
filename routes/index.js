@@ -1,6 +1,5 @@
 const fibo = require('../fibonacci');
-const port =  process.env.PORT || 3000;
-function fibonacciRoutes(app){
+function fibonacciRoutes(app, port){
   app.get('/', (request, response) => {
     response.send(`
       <h1 style='text-align: center; font-family: Arial, Helvetica, sans-serif; font-weight: normal'>
